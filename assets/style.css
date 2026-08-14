@@ -1,0 +1,213 @@
+:root {
+  --purple: #38003c;
+  --purple-light: #5a0060;
+  --green: #00ff85;
+  --ink: #1a1a1a;
+  --paper: #ffffff;
+  --paper-alt: #f5f2f6;
+  --border: #e0d9e3;
+  --amber: #b45309;
+  --amber-bg: #fff7e6;
+  --amber-border: #f0c36d;
+  --muted: #6b6470;
+  --radius: 10px;
+  --max-width: 900px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper-alt);
+  line-height: 1.6;
+}
+
+header.site-header {
+  background: linear-gradient(135deg, var(--purple), var(--purple-light));
+  color: var(--paper);
+  padding: 2.5rem 1.5rem 2rem;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.site-header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.site-header p.tagline {
+  margin: 0 0 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 1.05rem;
+}
+
+nav.site-nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+nav.site-nav a {
+  color: var(--paper);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.35);
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--purple);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+section {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.75rem;
+}
+
+section h2 {
+  margin-top: 0;
+  color: var(--purple);
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+section h3 {
+  color: var(--purple);
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  color: var(--purple);
+  margin-bottom: 0.5rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: var(--paper-alt);
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+tr.prize-row td.amount {
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.overflow-scroll {
+  overflow-x: auto;
+}
+
+.placeholder {
+  color: var(--amber);
+  background: var(--amber-bg);
+  border: 1px dashed var(--amber-border);
+  padding: 0.05rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.placeholder-block {
+  background: var(--amber-bg);
+  border: 1px dashed var(--amber-border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.placeholder-block p:first-child { margin-top: 0; }
+.placeholder-block p:last-child { margin-bottom: 0; }
+
+.callout {
+  background: var(--paper-alt);
+  border-left: 4px solid var(--purple);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.callout.locked {
+  border-left-color: var(--green);
+}
+
+.pill {
+  display: inline-block;
+  background: var(--purple);
+  color: var(--paper);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+ol.rules-list, ul.rules-list {
+  padding-left: 1.25rem;
+}
+
+ol.rules-list li, ul.rules-list li {
+  margin-bottom: 0.75rem;
+}
+
+.pot-total {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--purple);
+}
+
+footer.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  section { padding: 1.25rem 1.25rem; }
+  .site-header h1 { font-size: 1.6rem; }
+}
