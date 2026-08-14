@@ -1,15 +1,15 @@
 :root {
-  --purple: #38003c;
-  --purple-light: #5a0060;
-  --green: #00ff85;
+  --purple: #0b5c2e;
+  --purple-light: #12833f;
+  --green: #22c55e;
   --ink: #1a1a1a;
   --paper: #ffffff;
-  --paper-alt: #f5f2f6;
-  --border: #e0d9e3;
+  --paper-alt: #eef7f1;
+  --border: #d7e6dc;
   --amber: #b45309;
   --amber-bg: #fff7e6;
   --amber-border: #f0c36d;
-  --muted: #6b6470;
+  --muted: #5f6d64;
   --radius: 10px;
   --max-width: 900px;
 }
@@ -196,6 +196,42 @@ ol.rules-list li, ul.rules-list li {
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--purple);
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.committee-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 3px solid var(--green);
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.committee-member .name {
+  font-weight: 700;
+  color: var(--purple);
+  margin: 0 0 0.15rem;
+}
+
+.committee-member .title {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .opener {
