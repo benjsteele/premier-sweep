@@ -198,6 +198,33 @@ ol.rules-list li, ul.rules-list li {
   color: var(--purple);
 }
 
+.opener {
+  background: linear-gradient(135deg, var(--paper), var(--paper-alt));
+  border: 2px solid var(--green);
+}
+
+.opener .opener-lede {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--purple);
+  margin-top: 0;
+}
+
+.opener .opener-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px dashed var(--border);
+  padding-top: 0.85rem;
+  margin-top: 1.15rem;
+  margin-bottom: 0;
+}
+
+.opener .opener-meta + .opener-meta {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0.5rem;
+}
+
 footer.site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
