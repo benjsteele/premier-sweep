@@ -1,4 +1,4 @@
-# Premier Sweep 2026/27
+# Regan's Sweep Stake
 
 A static site for a 20-player Premier League sweepstake, built for GitHub Pages.
 
