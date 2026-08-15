@@ -139,6 +139,16 @@ tr.prize-row td.amount {
   overflow-x: auto;
 }
 
+.paid-yes {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.paid-no {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
 .placeholder {
   color: var(--amber);
   background: var(--amber-bg);
