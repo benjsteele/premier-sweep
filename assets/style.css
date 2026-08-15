@@ -356,6 +356,17 @@ footer.site-footer {
   font-size: 0.85rem;
 }
 
+.footer-logo {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin: 0 auto 0.75rem;
+}
+
+footer.site-footer p {
+  margin: 0;
+}
+
 @media (max-width: 600px) {
   section { padding: 1.25rem 1.25rem; }
   .site-header h1 { font-size: 1.6rem; }
