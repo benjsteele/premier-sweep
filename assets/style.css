@@ -171,6 +171,15 @@ tr.prize-row td.amount {
 .placeholder-block p:first-child { margin-top: 0; }
 .placeholder-block p:last-child { margin-bottom: 0; }
 
+.payment-qr {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--amber-border);
+  margin: 0.5rem 0 1rem;
+}
+
 .callout {
   background: var(--paper-alt);
   border-left: 4px solid var(--purple);
@@ -281,6 +290,23 @@ details:not([open]) summary.section-summary {
   .committee-member .title {
     font-size: 0.72rem;
   }
+}
+
+.countdown-section {
+  text-align: center;
+}
+
+.countdown-timer {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--purple);
+  margin: 0.25rem 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown-sub {
+  color: var(--muted);
+  margin: 0;
 }
 
 .opener {
