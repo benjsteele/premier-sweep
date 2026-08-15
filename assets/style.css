@@ -198,6 +198,24 @@ ol.rules-list li, ul.rules-list li {
   color: var(--purple);
 }
 
+summary.section-summary {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+summary.section-summary span {
+  color: var(--purple);
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+details:not([open]) summary.section-summary {
+  margin-bottom: 0;
+}
+
 .committee-grid {
   display: flex;
   justify-content: center;
