@@ -2,9 +2,9 @@
 
 A static site for a 20-player Premier League sweepstake, built for GitHub Pages.
 
-- `index.html` — overview and the €2,000 prize structure
-- `rules.html` — full rules, with `TBC` placeholders for entry fee, deadline, draw method, etc.
-- `sweepstake.html` — placeholder draw table (club/player per entry), to be filled in once the draw happens
+- `index.html` — the sweepstake draw table (club/player/paid per entry)
+- `rules.html` — full rules
+- `overview.html` — the €2,000 prize structure, organising committee, entry details, and payment links
 
 ## Enabling GitHub Pages
 
