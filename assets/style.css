@@ -171,6 +171,14 @@ tr.prize-row td.amount {
 .placeholder-block p:first-child { margin-top: 0; }
 .placeholder-block p:last-child { margin-bottom: 0; }
 
+.placeholder-block summary.section-summary {
+  margin: 0.75rem 0 1rem;
+}
+
+.placeholder-block summary.section-summary span {
+  font-size: 1rem;
+}
+
 .payment-options {
   display: flex;
   flex-wrap: wrap;
